@@ -4,6 +4,15 @@ This function provides the abscissar and weights for Gauss-Legendre
 Quadratures within the range of [min_th,max_th] equally splited into
 Num_of_panels panels. The code is limited to no more than 8 panels and no
 more than 16 points in each panel.
+
+inputs(s):
+Num_of_points: Number of collocation points in each panel
+min_th, max_th: Lower and upper bound of the interval on which the Gauss-Legendre Quadrature is performed
+Num_of_panels: Number of panels, thus the total number of collocation points is Num_of_pints*Num_of_panels
+
+output(s):
+abscissae: position of all collocation points
+weights: weights for Gauss-Legendre Quadrature associated with the abscissae
 %}
 %first extract abscissae and weigths for [-1,1]
 switch Num_of_points
